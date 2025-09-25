@@ -7,7 +7,7 @@ function Logo() {
   return (
     <div className="flex items-center space-x-6 ">
       <section
-        className="text-[22px]"
+        className="text-[21px]"
         onClick={() => setSidebarOpen(!sidebarOpen)}
       >
         <RxHamburgerMenu />
