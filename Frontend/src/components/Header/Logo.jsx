@@ -1,9 +1,10 @@
-import React, { useState } from "react"
+import React, { useContext, useState } from "react"
 import youtubeLogo from "../../../public/youtube.png"
 import { RxHamburgerMenu } from "react-icons/rx"
+import { Context } from "../../utils/Context"
 
 function Logo() {
-  const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [sidebarOpen, setSidebarOpen] = useContext(Context)
   return (
     <div className="flex items-center space-x-6 ">
       <section
