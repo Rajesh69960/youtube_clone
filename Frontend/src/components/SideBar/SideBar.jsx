@@ -25,150 +25,144 @@ import MiniSideBar from "./MiniSideBar"
 function SideBar() {
   const [openSideBar, setOpenSideBar] = useContext(Context)
   return (
-    <div>
-      {openSideBar ? (
-        <main
-          className="w-[240px] h-[100vh] font-semibold bg-white py-1 sticky top-[57px] left-0 text-sm hover:overflow-y-auto "
-          onClick={() => setOpenSideBar(!openSideBar)}
-        >
-          <section className="flex flex-col px-4 py-2 ">
-            <div className="flex items-center gap-6 bg-gray-200 rounded-lg px-2 py-[10px]">
-              <i className="text-xl">
-                <TiHome />
-              </i>
-              <span>Home</span>
-            </div>
-            <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-              <i className="text-xl">
-                <SiYoutubeshorts />
-              </i>
-              <span>Shorts</span>
-            </div>
-            <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-              <i className="text-xl">
-                <MdOutlineSubscriptions />
-              </i>
-              <span>Subscriptions</span>
-            </div>
-          </section>
-          <section>
-            <div className="flex items-center gap-2 pl-6 pt-6 pb-2">
-              <p className="font-medium text-base">You</p>
-              <i className="text-sm mt-1">
-                <PiGreaterThanThin />
-              </i>
-            </div>
-            <section className="flex flex-col px-4 py-2">
-              <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-                <i className="text-xl">
-                  <GrHistory />
-                </i>
-                <span>History</span>
-              </div>
-              <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-                <i className="text-xl">
-                  <CgPlayList />
-                </i>
-                <span>Playlists</span>
-              </div>
-              <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-                <i className="text-xl">
-                  <RiVideoLine />
-                </i>
-                <span>Your Videos</span>
-              </div>
-              <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-                <i className="text-xl">
-                  <MdOutlineWatchLater />
-                </i>
-                <span>Watch Later</span>
-              </div>
-              <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-                <i className="text-xl">
-                  <AiOutlineLike />
-                </i>
-                <span>Liked</span>
-              </div>
-              <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-                <i className="text-xl">
-                  <LiaDownloadSolid />
-                </i>
-                <span>Downloads</span>
-              </div>
-            </section>
-          </section>
-          <section>
-            <section className="flex items-center gap-4 pl-6 pt-6 pb-2 ">
-              <p className="font-medium text-base">Explore</p>
-            </section>
-            <section className="flex flex-col px-4 py-2">
-              <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-                <i className="text-lg">
-                  <RiShoppingBag4Line />
-                </i>
-                <span>Shopping</span>
-              </div>
-              <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-                <i className="text-lg">
-                  <IoMusicalNotesOutline />
-                </i>
-                <span>Music</span>
-              </div>
-              <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-                <i className="text-lg">
-                  <PiFilmSlateBold />
-                </i>
-                <span>Movies</span>
-              </div>
-              <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-                <i className="text-lg">
-                  <HiMiniSignal />
-                </i>
-                <span>Live</span>
-              </div>
-              <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-                <i className="text-lg">
-                  <SiYoutubegaming />
-                </i>
-                <span>Gaming</span>
-              </div>
-              <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-                <i className="text-lg">
-                  <MdOutlineNewspaper />
-                </i>
-                <span>News</span>
-              </div>
-              <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-                <i className="text-lg">
-                  <GrTrophy />
-                </i>
-                <span>Sports</span>
-              </div>
-              <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-                <i className="text-lg">
-                  <GiGraduateCap />
-                </i>
-                <span>Courses</span>
-              </div>
-              <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-                <i className="text-lg">
-                  <GiHanger />
-                </i>
-                <span>Fashion & Beauty</span>
-              </div>
-              <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
-                <i className="text-lg">
-                  <MdOutlinePodcasts />
-                </i>
-                <span>PodCasts</span>
-              </div>
-            </section>
-          </section>
-        </main>
-      ) : (
-        <MiniSideBar />
-      )}
-    </div>
+    <main
+      className="w-[240px] h-[100vh] font-semibold bg-white py-1 fixed top-0 left-0 text-sm hover:overflow-y-auto mt-14 "
+      onClick={() => setOpenSideBar(!openSideBar)}
+    >
+      <section className="flex flex-col px-4 py-2 ">
+        <div className="flex items-center gap-6 bg-gray-200 rounded-lg px-2 py-[10px]">
+          <i className="text-xl">
+            <TiHome />
+          </i>
+          <span>Home</span>
+        </div>
+        <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+          <i className="text-xl">
+            <SiYoutubeshorts />
+          </i>
+          <span>Shorts</span>
+        </div>
+        <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+          <i className="text-xl">
+            <MdOutlineSubscriptions />
+          </i>
+          <span>Subscriptions</span>
+        </div>
+      </section>
+      <section>
+        <div className="flex items-center gap-2 pl-6 pt-6 pb-2">
+          <p className="font-medium text-base">You</p>
+          <i className="text-sm mt-1">
+            <PiGreaterThanThin />
+          </i>
+        </div>
+        <section className="flex flex-col px-4 py-2">
+          <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+            <i className="text-xl">
+              <GrHistory />
+            </i>
+            <span>History</span>
+          </div>
+          <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+            <i className="text-xl">
+              <CgPlayList />
+            </i>
+            <span>Playlists</span>
+          </div>
+          <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+            <i className="text-xl">
+              <RiVideoLine />
+            </i>
+            <span>Your Videos</span>
+          </div>
+          <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+            <i className="text-xl">
+              <MdOutlineWatchLater />
+            </i>
+            <span>Watch Later</span>
+          </div>
+          <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+            <i className="text-xl">
+              <AiOutlineLike />
+            </i>
+            <span>Liked</span>
+          </div>
+          <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+            <i className="text-xl">
+              <LiaDownloadSolid />
+            </i>
+            <span>Downloads</span>
+          </div>
+        </section>
+      </section>
+      <section>
+        <section className="flex items-center gap-4 pl-6 pt-6 pb-2 ">
+          <p className="font-medium text-base">Explore</p>
+        </section>
+        <section className="flex flex-col px-4 py-2">
+          <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+            <i className="text-lg">
+              <RiShoppingBag4Line />
+            </i>
+            <span>Shopping</span>
+          </div>
+          <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+            <i className="text-lg">
+              <IoMusicalNotesOutline />
+            </i>
+            <span>Music</span>
+          </div>
+          <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+            <i className="text-lg">
+              <PiFilmSlateBold />
+            </i>
+            <span>Movies</span>
+          </div>
+          <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+            <i className="text-lg">
+              <HiMiniSignal />
+            </i>
+            <span>Live</span>
+          </div>
+          <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+            <i className="text-lg">
+              <SiYoutubegaming />
+            </i>
+            <span>Gaming</span>
+          </div>
+          <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+            <i className="text-lg">
+              <MdOutlineNewspaper />
+            </i>
+            <span>News</span>
+          </div>
+          <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+            <i className="text-lg">
+              <GrTrophy />
+            </i>
+            <span>Sports</span>
+          </div>
+          <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+            <i className="text-lg">
+              <GiGraduateCap />
+            </i>
+            <span>Courses</span>
+          </div>
+          <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+            <i className="text-lg">
+              <GiHanger />
+            </i>
+            <span>Fashion & Beauty</span>
+          </div>
+          <div className="flex items-center gap-6 hover:bg-gray-200 rounded-lg px-2 py-[10px]">
+            <i className="text-lg">
+              <MdOutlinePodcasts />
+            </i>
+            <span>PodCasts</span>
+          </div>
+        </section>
+      </section>
+    </main>
   )
 }
 

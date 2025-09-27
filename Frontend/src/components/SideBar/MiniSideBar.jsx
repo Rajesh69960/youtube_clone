@@ -9,7 +9,9 @@ import { Context } from "../../utils/Context"
 function MiniSideBar() {
   const [sidebarOpen, setSidebarOpen] = useContext(Context)
   return (
-    <div className={`w-16 sticky top-[57px] py-1 mx-1 bg-white flex flex-col`}>
+    <div
+      className={`w-16 mt-14 sticky top-[57px] py-1 mx-1 bg-white flex flex-col`}
+    >
       <div className="flex flex-col items-center gap-1 px-1 py-3 hover:bg-gray-200 rounded-lg">
         <i>
           <TiHome className="text-[24px]" />

@@ -5,12 +5,26 @@ import App from "./App.jsx"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Register from "./components/Register/Register.jsx"
 import Login from "./components/Login/Login.jsx"
+import VideoPage from "./components/VideoPage/VideoPage.jsx"
+import VideoPlayPage from "./pages/VideoPlayPage.jsx"
+import HomePage from "./pages/HomePage.jsx"
 
 const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    children: [
+      {
+        path: "/video",
+        element: <VideoPlayPage />,
+      },
+      {
+        path: "/home",
+        element: <HomePage />,
+      },
+    ],
   },
+
   {
     path: "/register",
     element: <Register />,

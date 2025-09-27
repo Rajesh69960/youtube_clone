@@ -5,20 +5,12 @@ import Videos from "./components/VideoSection.jsx/Videos"
 import Searchtabs from "./components/SearchTabs/Searchtabs"
 import SearchTabs from "./components/SearchTabs/Searchtabs"
 import ContextProvider from "./utils/Context"
+import { Outlet } from "react-router-dom"
 
 function App() {
   return (
     <ContextProvider>
-      <div>
-        <Header />
-        <section className="flex">
-          <SideBar />
-          <div className="flex flex-col">
-            <SearchTabs />
-            <Videos />
-          </div>
-        </section>
-      </div>
+      <Outlet />
     </ContextProvider>
   )
 }

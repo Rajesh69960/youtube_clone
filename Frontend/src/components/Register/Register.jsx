@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import youtubeLogo from "../../../public/youtube.png"
+import youtubeLogo from "../../assets/youtube.png"
 function Register() {
   const navigate = useNavigate()
   const [formData, setFormData] = useState({

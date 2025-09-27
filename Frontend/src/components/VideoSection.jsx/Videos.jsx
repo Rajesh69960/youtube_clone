@@ -257,7 +257,7 @@ function Videos() {
     },
   ]
   return (
-    <div className="w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-x-4 mt-32 px-8">
+    <div className="w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-x-4 mt-32 px-8">
       {videos.map((video) => {
         return <Video key={video.videoId} video={video} />
       })}

@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react"
-import youtubeLogo from "../../../public/youtube.png"
+import youtubeLogo from "../../assets/youtube.png"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { Context } from "../../utils/Context"
 

@@ -16,7 +16,7 @@ function Video({ video }) {
   return (
     <div
       key={video.videoId}
-      className="w-full min-w-[260px] flex flex-col space-y-2 cursor-pointer "
+      className="w-full min-w-[220px]  flex flex-col space-y-2 cursor-pointer "
     >
       <section className=" h-[62%] ">
         <img
