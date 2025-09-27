@@ -8,7 +8,7 @@ import Header from "../components/Header/Header"
 
 function HomePage() {
   const [openSideBar, setOpenSideBar] = useContext(Context)
-  let ifSidebar = openSideBar ? "pl-60" : "pl-0"
+  let ifSidebar = openSideBar ? "pl-[240px]" : "pl-[64px]"
   return (
     <div className="flex">
       <Header />

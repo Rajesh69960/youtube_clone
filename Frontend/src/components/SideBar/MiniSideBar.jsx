@@ -10,7 +10,7 @@ function MiniSideBar() {
   const [sidebarOpen, setSidebarOpen] = useContext(Context)
   return (
     <div
-      className={`w-16 mt-14 sticky top-[57px] py-1 mx-1 bg-white flex flex-col`}
+      className={`w-[60px] fixed top-0 left-0 mt-[57px] py-1 mx-1 bg-white flex flex-col`}
     >
       <div className="flex flex-col items-center gap-1 px-1 py-3 hover:bg-gray-200 rounded-lg">
         <i>

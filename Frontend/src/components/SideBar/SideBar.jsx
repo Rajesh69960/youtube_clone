@@ -26,7 +26,7 @@ function SideBar() {
   const [openSideBar, setOpenSideBar] = useContext(Context)
   return (
     <main
-      className="w-[240px] h-[100vh] font-semibold bg-white py-1 fixed top-0 left-0 text-sm hover:overflow-y-auto mt-14 "
+      className="w-[240px] h-[100vh] font-semibold bg-white py-1 fixed top-0 left-0 text-sm hover:overflow-y-auto mt-[57px] "
       onClick={() => setOpenSideBar(!openSideBar)}
     >
       <section className="flex flex-col px-4 py-2 ">

@@ -7,10 +7,10 @@ import { Context } from "../utils/Context"
 function VideoPlayPage() {
   const [openSideBar, setOpenSideBar] = useContext(Context)
   return (
-    <div className="flex">
+    <div className="flex w-[100%]">
       <Header />
-      <div>{openSideBar ? <SideBar className="fixed z-10" /> : null}</div>
-      <section>
+      <div>{openSideBar ? <SideBar /> : null}</div>
+      <section className="w-full">
         <VideoPage />
       </section>
     </div>
