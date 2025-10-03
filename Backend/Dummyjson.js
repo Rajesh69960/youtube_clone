@@ -1,0 +1,51 @@
+const videos = [
+  {
+    title: "React Hooks Explained",
+    description: "A beginner-friendly guide to understanding React Hooks.",
+    video: "https://www.youtube.com/embed/f687hBjwFcM",
+    thumbnail: "https://i.ytimg.com/vi/f687hBjwFcM/hqdefault.jpg",
+    category: ["React", "Frontend", "Web Development"],
+    channelName: "Web Dev Simplified",
+    channelId: "68a05f3e8a0312438d9659eb",
+    uploader: "68a05e58a7c77c73e065ee0b",
+    handle: "@webdevsimplified",
+    avatar:
+      "https://yt3.ggpht.com/ytc/AKedOLQ_mEKtZekog0uqpU7oA7FjXcQglwDdYOfpPNLZ=s48-c-k-c0x00ffffff-no-rj",
+    views: 400000,
+    likes: 13000,
+    dislikes: 50,
+  },
+  {
+    title: "Understanding React State",
+    description: "Learn how React manages state in functional components.",
+    video: "https://www.youtube.com/embed/abc123",
+    thumbnail: "https://i.ytimg.com/vi/abc123/hqdefault.jpg",
+    category: ["React", "State Management"],
+    channelName: "Code Academy",
+    channelId: "1234567890abcdef12345678",
+    uploader: "abcdef1234567890abcdef12",
+    handle: "@codeacademy",
+    avatar:
+      "https://yt3.ggpht.com/ytc/AKedOLQ_example2=s48-c-k-c0x00ffffff-no-rj",
+    views: 250000,
+    likes: 9500,
+    dislikes: 200,
+  },
+  // ... (Add 18 more similar objects)
+  {
+    title: "CSS Flexbox Tutorial",
+    description: "Master CSS Flexbox for responsive layouts.",
+    video: "https://www.youtube.com/embed/flex123",
+    thumbnail: "https://i.ytimg.com/vi/flex123/hqdefault.jpg",
+    category: ["CSS", "Web Design"],
+    channelName: "Design With Me",
+    channelId: "9876543210abcdef12345678",
+    uploader: "fedcba9876543210fedcba09",
+    handle: "@designwithme",
+    avatar:
+      "https://yt3.ggpht.com/ytc/AKedOLQ_flexavatar=s48-c-k-c0x00ffffff-no-rj",
+    views: 180000,
+    likes: 7500,
+    dislikes: 100,
+  },
+]
